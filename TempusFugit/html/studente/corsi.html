@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../css/home.min.css" type="text/css" />
+    <script type='text/javascript' src='../../script/javascript/changePage.js'></script>
   </head>
   <body>
     <div id="corsi_content">
@@ -25,17 +26,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent"><br/>
-          <ul class="navbar-nav mr-auto" style="margin-left:40%;">
+          <ul class="navbar-nav mr-auto" style="margin-left:40%;" id="ulNav">
             <!--Corsi-->
-            <li class="nav-item"><a class="nav-link" href="#">Corsi<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="corsi">Corsi<span class="sr-only">(current)</span></a></li>
             <!--Comunicazioni-->
-            <li class="nav-item"><a class="nav-link" href="comunicazioni.html">Comunicazioni</a></li>
-            <!--Profilo-->
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profilo</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item sm" href="../index.html">Esci</a>
-              </div>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="comunicazioni">Comunicazioni</a></li>
+          </ul>
+          <ul class="navbar-nav mr-auto" style="margin-left:40%;">
+              <li class="nav-item"><a class="nav-link" href="../login.php"><b>Esci</b></a></li>
           </ul>
         </div>
       </nav>
@@ -44,11 +42,11 @@
         <div class="row" style="margin-top:16px;left:-16px;">
           <div class="col-sm col-sm-custom">
             <div class="card" style="width: 18rem;">
-              <div class="card-body">
+              <div class="card-body" id="divCorso">
                 <h5 class="card-title" id="nomeCorso">Calcetto</h5>
                 <p class="card-text" id="descrizioneCorso">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="card-link" data-toggle="modal" data-target="#myModal" >Iscriviti al corso</a>
-                <a href="corso.html" class="card-link">Vai al corso</a>
+                <a href="corso" class="card-link">Vai al corso</a>
                 <!-- Modal -->
                 <div id="myModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
