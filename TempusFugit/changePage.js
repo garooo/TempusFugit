@@ -5,7 +5,7 @@ $(document).ready(function(){
   $("div#ultimaComunicazione a").click(function(e){
       e.preventDefault();
       var page= $(this).attr("href");
-      $("#content").load("" + page + ".php");
+      $("#content").load("" + page + ".html");
   });
     
   //Script in comune alle pagine
@@ -13,7 +13,7 @@ $(document).ready(function(){
   $("ul#ulNav li a").click(function(e){
     e.preventDefault();
     var page= $(this).attr("href");
-    $("#content").load(""+ page + ".php");
+    $("#content").load(""+ page + ".html");
   });
 
   //Corsi -> Iscrizione al corso / Vai la corso (#linkCorso)
@@ -21,7 +21,7 @@ $(document).ready(function(){
   $("div#divCorso a").click(function(e){
     e.preventDefault();
     var page= $(this).attr("href");
-    $("#content").load("" + page + ".php");
+    $("#content").load("" + page + ".html");
   });
 
   //Corso -> Discussioni
@@ -29,7 +29,7 @@ $(document).ready(function(){
   $("#nomeDiscussione").click(function(e){
     e.preventDefault();
     var page= $(this).attr("href");
-    $("#content").load("" + page + ".php");
+    $("#content").load("" + page + ".html");
   });
 
 });
