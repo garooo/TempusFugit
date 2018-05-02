@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Actions",
+    "\\Actions\\Complete",
+    "\\Actions\\Complete\\Professore",
+    "\\Actions\\Complete\\Studente",
+    "\\Actions\\incomplete",
+    "\\Actions\\Util"
+  ],
+  "SelectedNode": "\\Actions\\Complete\\Professore\\creaComunicazione.php",
+  "PreviewInSolutionExplorer": false
+}
