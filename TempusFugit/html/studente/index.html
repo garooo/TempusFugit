@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="../../css/home.min.css" type="text/css"/>
     <script type='text/javascript' src='../../script/javascript/changePage.js'></script>
   </head>
-  <body>
-    <div id="index_content">
+  <body id="content">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="logo">
           <img class="rounded" src="../../images/logo.png" alt="" width="38" height="38"/>
@@ -33,15 +32,13 @@
             <li class="nav-item"><a class="nav-link" href="comunicazioni">Comunicazioni</a></li>
           </ul>
           <ul class="navbar-nav mr-auto" style="margin-left:40%;">
-            <!--Esci-->
-            <li class="nav-item"><a class="nav-link" href="../login.html"><b>Esci</b></a></li>
+              <li class="nav-item"><a class="nav-link" href="../login.html"><b>Esci</b></a></li>
           </ul>
         </div>
       </nav>
-      <div class="container" style="left:-16px;">
-        <div class="content">
+      <div class="container flex" style="left:-16px;" >
         <h2>I tuoi prossimi eventi:</h2>
-        <ul class="timeline">
+        <ul class="timeline" id="ulTimeline">
           <li>
             <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
               <div class="timeline-panel">
@@ -51,26 +48,37 @@
                 </div>
               <div class="timeline-body" id="ultimaComunicazione">
                 <p>Ultima comunicazione.</p>
-                <p><a class="btn btn-primary btn-lg" href="corso.html" role="button" id="linkCorso">Vai al corso</a></p>
+                <p><a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title" id="nomeCorso">Concerto</h4>
+                  <p id="orarioCorso"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 12.00</small></p>
+                </div>
+              <div class="timeline-body" id="ultimaComunicazione">
+                <p>Ultima comunicazione.</p>
+                <a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a>
               </div>
             </div>
           </li>
         </ul>
       </div>
-    </div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6 footerleft ">
-            <div class="logofooter">Tempus Fugit</div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-            <p><i class="fa fa-map-pin"></i> meme street, Uruguay</p>
-            <p><i class="fa fa-phone"></i> Phone (Italy) : +39 666 666 666</p>
-            <p><i class="fa fa-envelope"></i> E-mail : info@l.ol</p>
+      <footer class="customFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 footerleft ">
+              <div class="logofooter">Tempus Fugit</div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+              <p><i class="fa fa-map-pin"></i> meme street, Uruguay</p>
+              <p><i class="fa fa-phone"></i> Phone (Italy) : +39 666 666 666</p>
+              <p><i class="fa fa-envelope"></i> E-mail : info@l.ol</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>

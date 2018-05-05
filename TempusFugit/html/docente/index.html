@@ -13,9 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../css/home.min.css" type="text/css"/>
+    <script type='text/javascript' src='../../script/javascript/changePage.js'></script>
   </head>
-  <body>
-    <div id="index_content">
+  <body id="content">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="logo">
           <img class="rounded" src="../../images/logo.png" alt="" width="38" height="38"/>
@@ -25,28 +25,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent"><br/>
-          <ul class="navbar-nav mr-auto" style="margin-left:40%;">
+          <ul class="navbar-nav mr-auto" style="margin-left:40%;" id="ulNav">
             <!--Corsi-->
-            <li class="nav-item"><a class="nav-link" href="corsi.html">Corsi<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="corsi">Corsi<span class="sr-only">(current)</span></a></li>
             <!--Comunicazioni-->
-            <li class="nav-item"><a class="nav-link" href="comunicazioni.html">Comunicazioni</a></li>
-            <!--Profilo-->
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profilo</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item sm" href="../index.html">Esci</a>
-              </div>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="comunicazioni">Comunicazioni</a></li>
+
+          </ul>
+          <ul class="navbar-nav mr-auto" style="margin-left:40%;">
+              <li class="nav-item"><a class="nav-link" href="../login.html"><b>Esci</b></a></li>
           </ul>
         </div>
       </nav>
       <div class="jumbotron" id="jumbotron">
         <div class="container">
-          <h1 class="display-4">Crea un corso!</h1>
+          <h1 class="display-4" >Crea un corso!</h1>
           <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="creaCorso.html" role="button">Crea un nuovo corso</a></p>
+          <p><a class="btn btn-primary btn-lg" href="creaCorso" role="button" id="creaCorso">Crea un nuovo corso</a></p>
         </div>
       </div>
-      <div class="container" style="left:-16px;">
+      <div class="container flex">
         <h2>I tuoi corsi:</h2>
         <ul class="timeline">
           <li>
@@ -58,13 +56,12 @@
                 </div>
               <div class="timeline-body" id="ultimaComunicazione">
                 <p>Ultima comunicazione.</p>
-                <p><a class="btn btn-primary btn-lg" href="corso.html" role="button" id="linkCorso">Vai al corso</a></p>
+                <p><a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a></p>
               </div>
             </div>
           </li>
         </ul>
       </div>
-    </div>
     <footer class="customFooter">
       <div class="container">
         <div class="row">

@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../images/logo.png">
-    <title>Home - Tempus Fugit</title>
+    <title>Corsi - Tempus Fugit</title>
     <!-- Trovare e scaricare i fali corrispettivi ai CDN, per velocizzare il caricamento della pagina -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,28 +16,27 @@
     <script type='text/javascript' src='../../script/javascript/changePage.js'></script>
   </head>
   <body>
-    <div id="corso_content">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="logo">
-          <img class="rounded" src="../../images/logo.png" alt="" width="38" height="38"/>
-        </div>
-        <a class="navbar-brand" href="index.html" style="position:absolute; top:15px; left:60px;"><b><i>Tempus Fugit</i></b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"><br/>
-          <ul class="navbar-nav mr-auto" style="margin-left:40%;" id="ulNav">
-            <!--Corsi-->
-            <li class="nav-item"><a class="nav-link" href="corsi">Corsi<span class="sr-only">(current)</span></a></li>
-            <!--Comunicazioni-->
-            <li class="nav-item"><a class="nav-link" href="comunicazioni">Comunicazioni</a></li>
-          </ul>
-          <ul class="navbar-nav mr-auto" style="margin-left:40%;">
-              <li class="nav-item"><a class="nav-link" href="../login.php"><b>Esci</b></a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="container" style="margin-bottom:16px; left:-16px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="logo">
+        <img class="rounded" src="../../images/logo.png" alt="" width="38" height="38"/>
+      </div>
+      <a class="navbar-brand" href="index.html" style="position:absolute; top:15px; left:60px;"><b><i>Tempus Fugit</i></b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"><br/>
+        <ul class="navbar-nav mr-auto" style="margin-left:40%;" id="ulNav">
+          <!--Corsi-->
+          <li class="nav-item"><a class="nav-link" href="corsi">Corsi<span class="sr-only">(current)</span></a></li>
+          <!--Comunicazioni-->
+          <li class="nav-item"><a class="nav-link" href="comunicazioni">Comunicazioni</a></li>
+        </ul>
+        <ul class="navbar-nav mr-auto" style="margin-left:40%;">
+            <li class="nav-item"><a class="nav-link" href="../login.html"><b>Esci</b></a></li>
+        </ul>
+      </div>
+    </nav>
+      <div class="container flex" id="corso_content" style="padding-bottom:42px;">
         <!--Vista studente di un corso-->
         <div class="row" style="margin-top:16px;">
           <div class="col-md-4">
@@ -54,40 +53,158 @@
             <p class="lead">---Descrizione del corso---</p>
           </div>
         </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-4">
-            <h4>Materiali e discussioni:</h4>
-          </div>
+        <ul class="nav nav-tabs nav-justified" id="navCorso">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="eventiPassatiNav">Eventi Passati</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="prossimiEventiNav">Prossimi eventi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="comunicazioniNav">Comunicazioni</a>
+          </li>
+        </ul>
+        <small id="hint" class="justify">per visualizzare tutti gli eventi o le comunicazioni selezionare una categoria.</small>
+        <div id="eventiPassati">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title" id="nomeCorso">Calcetto</h4>
+                    <p id="orarioCorso"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14:30</small></p>
+                  </div>
+                <div class="timeline-body" id="ultimaComunicazione">
+                  <p>Ultima comunicazione.</p>
+                  <p><a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title" id="nomeCorso">Calcetto</h4>
+                    <p id="orarioCorso"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14:30</small></p>
+                  </div>
+                <div class="timeline-body" id="ultimaComunicazione">
+                  <p>Ultima comunicazione.</p>
+                  <p><a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title" id="nomeCorso">Calcetto</h4>
+                    <p id="orarioCorso"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14:30</small></p>
+                  </div>
+                <div class="timeline-body" id="ultimaComunicazione">
+                  <p>Ultima comunicazione.</p>
+                  <p><a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a></p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="list-group">
-              <p><a href="#" class="list-group-item list-group-item-action" id="materiale">Materiale 1 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" style="position:absolute; right:10px;"><path d="M0 0h24v24H0z" fill="none"/><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg></a></p>
+        <div id="prossimiEventi">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title" id="nomeCorso">Calcetto</h4>
+                    <p id="orarioCorso"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14:30</small></p>
+                  </div>
+                <div class="timeline-body" id="ultimaComunicazione">
+                  <p>Ultima comunicazione.</p>
+                  <p><a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title" id="nomeCorso">Calcetto</h4>
+                    <p id="orarioCorso"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14:30</small></p>
+                  </div>
+                <div class="timeline-body" id="ultimaComunicazione">
+                  <p>Ultima comunicazione.</p>
+                  <p><a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title" id="nomeCorso">Calcetto</h4>
+                    <p id="orarioCorso"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14:30</small></p>
+                  </div>
+                <div class="timeline-body" id="ultimaComunicazione">
+                  <p>Ultima comunicazione.</p>
+                  <p><a class="btn btn-primary btn-lg" href="corso" role="button">Vai al corso</a></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="comunicazioni">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title" id="titoloComunicazione">--TItolo Comunicazione--</h4>
+                    <p id="dataComunicazione"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>--Data Comunicazione--</small></p>
+                  </div>
+                <div class="timeline-body" id="ultimaComunicazione">
+                  <p>--Corpo Comunicazione--</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="customFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 footerleft ">
+              <div class="logofooter">Tempus Fugit</div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+              <p><i class="fa fa-map-pin"></i> meme street, Uruguay</p>
+              <p><i class="fa fa-phone"></i> Phone (Italy) : +39 666 666 666</p>
+              <p><i class="fa fa-envelope"></i> E-mail : info@l.ol</p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="list-group">
-              <a href="discussione" class="list-group-item list-group-item-action" id="nomeDiscussione">discussione 1 <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" style="position:absolute; right:10px;"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/><path d="M0 0h24v24H0z" fill="none"/></svg></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6 footerleft ">
-            <div class="logofooter">Tempus Fugit</div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-            <p><i class="fa fa-map-pin"></i> meme street, Uruguay</p>
-            <p><i class="fa fa-phone"></i> Phone (Italy) : +39 666 666 666</p>
-            <p><i class="fa fa-envelope"></i> E-mail : info@l.ol</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+      <script>
+      $(document).ready(function(){
+        $("#eventiPassati").hide();
+        $("#prossimiEventi").hide();
+        $("#comunicazioni").hide();
+        $("#eventiPassatiNav").click(function(){
+          $("#hint").hide();
+          $("#eventiPassati").show();
+          $("#prossimiEventi").hide();
+          $("#comunicazioni").hide();
+        });
+        $("#prossimiEventiNav").click(function(){
+          $("#hint").hide();
+          $("#eventiPassati").hide();
+          $("#prossimiEventi").show();
+          $("#comunicazioni").hide();
+        });
+        $("#comunicazioniNav").click(function(){
+          $("#hint").hide();
+          $("#eventiPassati").hide();
+          $("#prossimiEventi").hide();
+          $("#comunicazioni").show();
+        });
+      });
+    </script>
   </body>
 </html>
