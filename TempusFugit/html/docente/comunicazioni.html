@@ -6,13 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../images/logo.png">
-    <title>Home - Tempus Fugit</title>
+    <title>Comunicazioni - Tempus Fugit</title>
     <!-- Trovare e scaricare i fali corrispettivi ai CDN, per velocizzare il caricamento della pagina -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../css/home.min.css" type="text/css"/>
+    <script type='text/javascript' src='../../script/javascript/changePage.js'></script>
   </head>
   <body>
     <div id="comunicazioni_content">
@@ -25,21 +26,19 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent"><br/>
-          <ul class="navbar-nav mr-auto" style="margin-left:40%;">
+          <ul class="navbar-nav mr-auto" style="margin-left:40%;" id="ulNav">
             <!--Corsi-->
-            <li class="nav-item"><a class="nav-link" href="corsi.html">Corsi<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="corsi">Corsi<span class="sr-only">(current)</span></a></li>
             <!--Comunicazioni-->
-            <li class="nav-item"><a class="nav-link" href="comunicazioni.html">Comunicazioni</a></li>
-            <!--Profilo-->
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profilo</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item sm" href="../index.html">Esci</a>
-              </div>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="comunicazioni">Comunicazioni</a></li>
+
+          </ul>
+          <ul class="navbar-nav mr-auto" style="margin-left:40%;">
+              <li class="nav-item"><a class="nav-link" href="../login.html"><b>Esci</b></a></li>
           </ul>
         </div>
       </nav>
-      <div class="container">
+      <div class="container flex">
         <center>
         <div class="row">
           <div class="col-md-4">
